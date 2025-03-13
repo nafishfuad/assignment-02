@@ -319,6 +319,14 @@ nav {
 .post-5, .post-6 {
     display: none;
 }
+.post-1 p,
+.post-3 p,
+.post-4 p {
+    background-color: #95B226;
+}
+.post-2 p {
+    background-color: #5D58F0;
+}
 .button-container {
     display: flex;
     justify-content: center;
@@ -329,6 +337,9 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
+    .our-stories {
+        margin: 40px 0;
+    }
     .left-post-container {
         display: none;
     }
@@ -337,6 +348,14 @@ nav {
     }
     .post-5, .post-6 {
         display: block;
+    }
+    .post-3 p,
+    .post-4 p {
+    background-color: #5D58F0;
+    }
+    .post-5 p,
+    .post-6 p {
+    background-color: #95B226;
     }
     .posts {
         width: 175px;
@@ -353,4 +372,12 @@ nav {
     .posts h4 {
         font-size: 0.55rem;
         margin-left: 20px;
+    }
+    .button-container {
+        margin-top: 20px;
+    }
+    .button-container button{
+        font-size: 1rem;
+        padding: 7px 30px;
+    }
 }
