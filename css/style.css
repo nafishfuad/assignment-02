@@ -246,3 +246,111 @@ nav {
         font-size: 0.7rem;
     }
 }
+
+/* section 2 */
+.our-stories {
+    padding: 60px 0;
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.2), #FFFFFF), url("../assets/bg.png");
+}
+.our-stories h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.post-container {
+    display: flex;
+    gap: 20px;
+}
+.post-date-style {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 47px;
+    background-color: #3CD8E8;
+    overflow: auto;
+    margin: -30px 0 33px 40px;
+}
+.left-post-container {
+    background-color: #ffffff;
+    height: 630px;
+    border-radius: 16px;
+}
+.left-post-container img,
+.posts img {
+    border-radius: 16px 16px 0 0;
+}
+.left-post-container h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 0 50px 40px;
+}
+.post-description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.right-post-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.posts {
+    width: 290px;
+    height: 300px;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+.posts h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 60%;
+    margin-left: 45px;
+}
+.posts p {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.post-5, .post-6 {
+    display: none;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0;
+}
+.our-stories button {
+    background-color: #111111;
+}
+
+@media screen and (max-width: 576px) {
+    .left-post-container {
+        display: none;
+    }
+    .right-post-container {
+        margin: 0 auto;
+    }
+    .post-5, .post-6 {
+        display: block;
+    }
+    .posts {
+        width: 175px;
+        height: 180px;
+    }
+    .posts p {
+        font-size: 0.55rem;
+        margin-top: -15px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+    .posts h4 {
+        font-size: 0.55rem;
+        margin-left: 20px;
+}
