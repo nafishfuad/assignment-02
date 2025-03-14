@@ -6,20 +6,21 @@
     font-weight: 400;
     font-style: normal;
   }
+  /* Global Design */
+
 * {
     margin: 0;
     padding: 0;
 }
-a {
-    text-decoration: none;
-    color: #ffffff;
+body {
+    background-color: #F7F7F7;
 }
 h4 {
     color: #111111;
 }
-/* Global Design */
-body {
-    background-color: #F7F7F7;
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
 .btn {
     font-size: 1.25rem;
@@ -36,21 +37,33 @@ body {
 img {
     width: 100%;
 }
-/* Header style */
-/* nav */
+
 header,
-main,
+.standard-curriculum-container,
+.our-stories-container,
 footer {
-    max-width: 1160px;
+    max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
+.header-container,
+.standard-curriculum,
+.our-stories,
+.footer-container {
+    max-width: 1140px;
+}
+
+/* Header style */
+
+/* nav */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
 }
-
 .brand {
     display: flex;
     align-items: center;
@@ -167,10 +180,13 @@ nav {
 }
 
 /* Min section design */
+
 /* section 1 */
+.standard-curriculum-container{
+    background-image: url("../assets/bg.png");
+}
 .standard-curriculum {
     margin: 60px 0;
-    background-image: url("../assets/bg.png");
 }
 .standard-curriculum h2 {
     text-align: center;
@@ -233,33 +249,13 @@ nav {
     color: #8700FF;
 }
 
-/* Responsive design mobile */
-@media screen and (max-width: 576px) {
-    .standard-curriculum h2 {
-        font-size: 1.7rem;
-        margin-bottom: 20px;
-    }
-    .card-container {
-        flex-direction: column;
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    .cards img {
-        width: 88px;
-        height: 88px;
-    }
-    .cards h3 {
-        font-size: 1rem;
-    }
-    .cards p {
-        font-size: 0.7rem;
-    }
-}
-
 /* section 2 */
+
+.our-stories-container {
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.2), #FFFFFF), url("../assets/bg.png");
+}
 .our-stories {
     padding: 60px 0;
-    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.2), #FFFFFF), url("../assets/bg.png");
 }
 .our-stories h3 {
     font-size: 2.8rem;
@@ -387,6 +383,26 @@ nav {
     .button-container button{
         font-size: 1rem;
         padding: 7px 30px;
+    }
+
+    .standard-curriculum h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .card-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .cards img {
+        width: 88px;
+        height: 88px;
+    }
+    .cards h3 {
+        font-size: 1rem;
+    }
+    .cards p {
+        font-size: 0.7rem;
     }
 }
 
