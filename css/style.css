@@ -344,7 +344,7 @@ nav {
 .our-stories button {
     background-color: #111111;
 }
-
+/* Responsive */
 @media screen and (max-width: 576px) {
     .our-stories {
         margin: 40px 0;
@@ -443,4 +443,46 @@ footer h5{
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+    .brand-info,
+    .footer-menu,
+    .social-media {
+        width: 100%;
+    }
+    footer h5{
+        font-size: 1.3rem;
+    }
+    .brand-info {
+        margin-bottom: 30px;
+    }
+    .brand-info h2 {
+        font-size: 1rem;
+    }
+    .footer-brand {
+        margin-bottom: 20px;
+    }
+    .footer-brand img {
+        width: 70px;
+        height: 70px;
+    }
+    .footer-brand h2 {
+        font-size: 2rem;
+    }
+    .footer-menu {
+        margin-bottom: 30px;
+    }
+    .footer-menu li {
+        font-size: 1rem;
+    }
+    .social-media img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
 }
