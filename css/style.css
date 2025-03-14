@@ -10,6 +10,13 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+h4 {
+    color: #111111;
+}
 /* Global Design */
 body {
     background-color: #F7F7F7;
@@ -32,7 +39,8 @@ img {
 /* Header style */
 /* nav */
 header,
-main {
+main,
+footer {
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -162,6 +170,7 @@ nav {
 /* section 1 */
 .standard-curriculum {
     margin: 60px 0;
+    background-image: url("../assets/bg.png");
 }
 .standard-curriculum h2 {
     text-align: center;
@@ -364,7 +373,6 @@ nav {
     .posts p {
         font-size: 0.55rem;
         margin-top: -15px;
-        margin-bottom: 20px;
         margin-left: 20px;
         margin-bottom: 10px;
         padding: 5px 10px;
@@ -380,4 +388,59 @@ nav {
         font-size: 1rem;
         padding: 7px 30px;
     }
+}
+
+/* Footer Section */
+footer {
+    background-color: #01ACFD;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+.brand-info {
+    width: 45%;
+}
+.footer-brand {
+    display: flex;
+    margin-bottom: 35px;
+}
+.footer-brand img {
+    width: 82px;
+    height: 82px;
+}
+.footer-brand h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.brand-info p {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.footer-menu {
+    width: 20%;
+}
+footer h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.footer-menu ul {
+    list-style-type: none;
+}
+.footer-menu li {
+    font-size: 1.23rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.social-media {
+    width: 25%;
+}
+.social-media img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
