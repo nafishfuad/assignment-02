@@ -350,6 +350,7 @@ nav {
     }
     .right-post-container {
         margin: 0 auto;
+        gap: 10px;
     }
     .post-5, .post-6 {
         display: block;
